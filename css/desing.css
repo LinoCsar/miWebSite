@@ -1,0 +1,39 @@
+
+body {
+    font-family: 'Allerta', sans-serif;
+}
+.title {
+    font-size: 70px;
+    font-family: 'Montserrat', sans-serif;
+}
+.title-a {
+    font-size:  24px;
+    
+    
+    
+}
+.title-b {
+    font-size: 50px;
+
+}
+.eventos {
+    color: gray;
+}
+.eventos h2 {
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+}
+.portada {
+    background-image: url('../imgEventos/fondo-calido.jpg');
+    color: white;
+}
+.logotipo {
+    display: inline-block;
+}
+.menu {
+    font-size: 24px;
+    display: inline-block;
+}
+.menu li {
+    display: inline-block;
+}
