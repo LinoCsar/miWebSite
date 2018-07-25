@@ -10,52 +10,137 @@
 </head>
 <body>
         
-    <header id="header" class="header">  <!-- Cabecera -->
-        <figure class="logotipo">
-            <img src="imgEventos/logo.png" alt="loguito" height="100" width="120">
-        </figure>
+        <header id="header" class="header ">  <!-- Cabecera -->
+            <figure class="logotipo">
+                <img src="imgEventos/iep-log.jpg" alt="loguito"  >
+            </figure>
         <nav class="menu">
             <ul>
                 <li> <a href="index.html">Home</a></li>
                 <li> <a href="precios.html">Precios</a></li>
                 <li> <a href="#eventos">Eventos</a></li>
-                <li> <a>Registrar</a></li>
+                <li> <a href="#registrarse">Registrarse</a></li>
             </ul>
         </nav> 
-    </header > 
+        </header >
     
     <section id="portada" class="portada">   <!-- Portada     -->
-         <H1 class="title">Eventos YEPES</H1>
-        <h3 class="title-a">Tus mejores momentos que nunca olvidarás estan asegurados</h3>   
-        <button>Conoce más</button> 
+  
+       <div class="contenedor">
+             <H1 class="title">Eventos <span>Yepes-Bros</span></H1>
+             <h3 class="title-a">Tus mejores momentos que nunca olvidarás estan asegurados</h3>   
+             <a href="precios.html">
+                <button class="button">Conoce más</button> 
+             </a> 
+       </div>
+ 
     </section>
     
-    <section id="eventos" class="eventos">   <!-- Eventos -->
+    <section id="eventos" class="eventos contenedor">   <!-- Eventos -->
       <h2>Nuestros Eventos</h2>  
-        <article class="evento1">
-            <img src="imgEventos/boda-perfecta.jpg" alt="img-boda" width="500" height="" >
-            <h3 class="title-b">La boda que siempre soñaste</h3>
-            <ol>
-                <li>Fotografías en 4k</li>
-                <li>Decoración Personalizada</li>
-                <li>Juego de Luces y Sonido</li>
-            </ol>
+        <article class="evento">
+            <img  class="derecha" src="imgEventos/boda-perfecta.jpg" alt="img-boda" width="450" height="" >
+            <div class="contenedor-evento-a">
+                <h3 class="title-b">La boda que siempre soñaste.</h3>
+                <ol>
+                    <li>Fotografías en 4k.</li>
+                    <li>Decoración Personalizada.</li>
+                    <li>Juego de Luces y Sonido.</li>
+                </ol>     
+            </div>
+            
         </article>
-        <article class="evento2">
-            <img src="imgEventos/escenario.jpg" alt="img-escenario" width="500" height="">
-            <h3 class="title-b">Asegura tu Concierto con Nosotros</h3>
-            <ol>
-                <li>Ecualizador Digital</li>
-                <li>Juego luces y sonido</li>
-                <li>Parlantes con sonido envolvente</li>
-            </ol>
+        <article class="evento">
+            <img class="izquierda" src="imgEventos/escenario.jpg" alt="img-escenario" width="450" height="">
+            <div class="contenedor-evento-b">
+                <h3 class="title-b">Asegura tu concierto con nosotros.</h3>
+                <ol>
+                    <li>Ecualizador Digital.</li>
+                    <li>Juego luces y sonido.</li>
+                    <li>Parlantes con sonido envolvente.</li>
+                </ol>                
+            </div>
+
+        </article>
+        <article class="evento">
+                <img  class="derecha" src="imgEventos/Buffet.jpg" alt="img-boda" width="450" height="" >
+                <div class="contenedor-evento-a">
+                    <h3 class="title-b">Un Buffet económico, apetitivo y gustoso.</h3>
+                    <ol>
+                        <li>Platos Criollos y de la región.</li>
+                        <li>Bebidas, champang, vino.</li>
+                        <li>Bocaditos y postres deliciosos.</li>
+                    </ol>     
+                </div>
+                
+        </article>
+        <article class="evento">
+            <img class="izquierda" src="imgEventos/fiveteen.jpg" alt="img-escenario" width="450" height="">
+            <div class="contenedor-evento-b">
+                <h3 class="title-b">El 15 años que jamás olvidaras.</h3>
+                <ol>
+                    <li>Fotografías en 4K</li>
+                    <li>Juego luces y sonido.</li>
+                    <li>Banda o grupo Musical.</li>
+                    <li>Musica y Diyei incluido.</li>
+                </ol>                
+            </div>
+
         </article>
 
     </section> 
     
-    <section>   <!-- footer -->
-        <footer>
+    <section id="registrarse">   <!-- footer -->
+        <footer class="footer">
+            <div class="contenedor">
+               <div class="contacto">
+                    <img src="imgEventos/iep-log.jpg " width="300" alt="eventos-footer">
+                    <a href="tel:+82928322849"><strong>Teléfono: </strong><span>928322849</span></a>
+                    <a href="mailto:lino.csr7@gmail.com"><strong>Email: </strong><span>lino.csr7@gmail.com</span></a>
+                </div>
+                <form class="formulario">
+                    <div class="col1">
+                        
+                            <label for="nombre">Nombre</label>
+                            <input type="text" required id="nombre" name="nombre"/>
+                            <label for="email">E-mail</label>
+                            <input type="email" required id="email"/>
+                    
+                        
+                        <div class="sexo">
+                            <label for="mujer">
+                                <input type="radio" id="mujer" name ="sexo" value= "mujer" checked> Mujer
+                            </label>
+                            <label for="hombre">
+                                    <input type="radio" id="hombre" name ="sexo" value ="hombre"> Hombre
+                            </label>
+                        </div>
+                        <div class="intereses">
+                            <label for="cotizacion">
+                                <input type="checkbox" id="cotizacion"  checked name ="intereses" value="cotizacion"> Cotización
+                            </label>
+                            <label for="reclamos">
+                                <input type="checkbox" id="reclamos" name ="intereses" value ="reclamos"> Reclamos
+                            </label>
+                            <label for="comentario">
+                                <input type="checkbox" id="comentario" name ="intereses" value="comentario"> Comentario
+                            </label>
+                            <label for="otros">
+                                <input type="checkbox" id="otros" name ="intereses" value="otros"> Otros
+                            </label>
+                        </div>   
+                    </div>
+             
+                    <div class="col2">
+                        <label for="comentarios">Comentarios</label>
+                        <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
+                        <input type="submit" value="Enviar" class="button"/>
+                    </div>
+                   
 
+                </form>   
+            </div>
+          
         </footer>
     </section>
 </body>

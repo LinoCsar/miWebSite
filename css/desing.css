@@ -1,23 +1,69 @@
+/*  *{
+    width: ancho;
+    height: alto; 
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid green;
 
+} */
+.header {
+    position: relative;
+    background-color: rgb(24, 24, 99);
+}
+.logotipo img {
+    width: 220px;
+    border-radius: 10px;
+}
 body {
     font-family: 'Allerta', sans-serif;
+    margin: 0;
+}
+.button {
+    border-radius: 12px;
+    border: none;
+    background: #6d62b4;
+    color: white;
+    padding: 7px 12px;
+    cursor: pointer;
+    font-size: 20px;
+    background: linear-gradient(to left,rgb(184, 44, 44), rgb(200, 5, 5))
 }
 .title {
     font-size: 70px;
     font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0;
+    margin-top: 120px;
+}
+.title span {
+    text-decoration: underline; 
 }
 .title-a {
     font-size:  24px;
-    
+    margin-top: 0;
     
     
 }
 .title-b {
-    font-size: 50px;
+    font-size: 35px;
+    margin-bottom: 20px;
 
 }
 .eventos {
     color: gray;
+
+}
+.evento {
+    margin: 10px;
+    padding: 10px;
+    overflow: hidden;
+    border : 1px solid gray;
+    border-radius: 20px;
+}
+.derecha {
+    float: right;
+}
+.izquierda {
+    float: left;
 }
 .eventos h2 {
     font-size: 35px;
@@ -25,7 +71,14 @@ body {
 }
 .portada {
     background-image: url('../imgEventos/fondo-calido.jpg');
+    background-size: cover; 
     color: white;
+    padding: 20px;
+    height: 500px
+
+}
+.portada button {
+    margin-bottom: 70px;
 }
 .logotipo {
     display: inline-block;
@@ -33,7 +86,119 @@ body {
 .menu {
     font-size: 24px;
     display: inline-block;
+    position: absolute;
+    right: 0;
+    margin-right: 50px;
+    
 }
 .menu li {
     display: inline-block;
+    margin-left: 30px;
+    
+}
+.menu li:after{
+    content: '|';
+    color: white;
+}
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.contenedor {
+    width: 1000px;
+    margin: auto;
+}
+.contenedor-evento-a {
+    margin-left: 50px;
+}
+.contenedor-evento-b {
+    margin-left: 500px;
+}
+
+.footer {
+    background:rgb(24, 24, 99);
+   
+    padding: 30px;
+}
+.footer .contenedor {
+    display: flex;
+    justify-content: space-around;
+}
+.contacto {
+    display: flex;
+    width: 300px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.contacto img {
+    display: block;
+    border-radius: 7px;
+}
+.contacto strong {
+    display: block;
+}
+.contacto a {
+    color: white;
+    text-decoration: none;
+    margin: 10px 10px 10px 0;
+}
+.formulario {
+    display: flex;
+    width: 500px;
+    color: white;
+    
+    
+}
+input , textarea {
+    outline: 0;
+}
+input:focus , textarea:focus {
+    background: lightgray;
+}
+
+.col1, col2 {
+    display: flex;
+    flex-direction: column;
+}
+.col1 {
+    margin-right :15px;
+}
+.col2 {
+    align-items: flex-start;
+}
+ .col2 .button {
+    margin-top :15px;
+ }
+.intereses label {
+    font-size: 16px;
+    padding: 10px;
+
+}
+
+.formulario label, .sexo, .intereses {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+table {
+    width: 100%;
+    margin: 50px 0;
+}
+th {
+    background: brown;
+    padding: 10px;
+    text-align: left;
+    color: aliceblue;
+    padding: 10px 20px;
+}
+ td {
+    padding: 20px;
+}
+table , td , th {
+    border: 1px solid brown;
+    border-collapse: collapse;
 }

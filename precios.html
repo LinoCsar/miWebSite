@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Desafio en GitHub</title>
+    <link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/desing.css">
+</head>
+<body>
+        <header id="header" class="header ">  <!-- Cabecera -->
+            <figure class="logotipo">
+                <img src="imgEventos/iep-log.jpg" alt="loguito" width="200px" >
+            </figure>
+            <nav class="menu">
+                <ul>
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <a href="precios.html">Precios</a></li>
+                    <li> <a href="index.html#eventos">Eventos</a></li>
+                    <li> <a href="formulario.html">Registrar</a></li>
+                </ul>
+            </nav> 
+        </header > 
+        <section class="tabla">
+            <div class="contenedor">
+                <table>
+                    <thead></thead>
+                    <tr>
+                        <th>Eventos</th>
+                        <th>Precio</th>
+                        <th>Descripción</th>
+                        <th>Beneficios e Informes</th>
+                    </tr>
+                    <tbody>
+                    <tr>
+                        <td>Evento: La boda Soñada</td>
+                        <td>S/. 7,000</td>
+                        <td>Contamos con 3 diferentes categorias</td>
+                        <td>Evento matrimonido.doc</td>
+                    </tr>  
+                    <tr>
+                        <td>Evento: Concierto de Lujo</td>
+                        <td>Hasta S/. 20,000</td>
+                        <td>Tenemos 5 diferentes categorias</td>
+                        <td>Evento conciertofancy.doc</td>
+                    </tr> 
+                      <tr>
+                        <td>Evento: Buffet Fancy</td>
+                        <td>Hasta S/. 7,000</td>
+                        <td>Tenemos 5 diferentes categorias</td>
+                        <td>Evento buffet.doc</td>
+                    </tr> 
+                    <tr>
+                        <td>Evento: Mis 15 años</td>
+                        <td>Hasta S/. 5,000</td>
+                        <td>Tenemos 2 diferentes categorias</td>
+                        <td>Evento fiveteen.doc</td>
+                    </tr> 
+                    </tbody>
+                
+                </table>  
+            </div>
+      
+        </section>
+
+        <footer class="footer">
+                <div class="contenedor">
+                   <div class="contacto">
+                        <img src="imgEventos/iep-log.jpg " width="300" alt="eventos-footer">
+                        <a href="tel:+82928322849"><strong>Teléfono: </strong><span>928322849</span></a>
+                        <a href="mailto:lino.csr7@gmail.com"><strong>Email: </strong><span>lino.csr7@gmail.com</span></a>
+                    </div>
+                    <form class="formulario">
+                        <div class="col1">
+                            
+                                <label for="nombre">Nombre</label>
+                                <input type="text" required id="nombre" name="nombre"/>
+                                <label for="email">E-mail</label>
+                                <input type="email" required id="email"/>
+                        
+                            
+                            <div class="sexo">
+                                <label for="mujer">
+                                    <input type="radio" id="mujer" name ="sexo" value= "mujer" checked> Mujer
+                                </label>
+                                <label for="hombre">
+                                        <input type="radio" id="hombre" name ="sexo" value ="hombre"> Hombre
+                                </label>
+                            </div>
+                            <div class="intereses">
+                                <label for="cotizacion">
+                                    <input type="checkbox" id="cotizacion"  checked name ="intereses" value="cotizacion"> Cotización
+                                </label>
+                                <label for="reclamos">
+                                    <input type="checkbox" id="reclamos" name ="intereses" value ="reclamos"> Reclamos
+                                </label>
+                                <label for="comentario">
+                                    <input type="checkbox" id="comentario" name ="intereses" value="comentario"> Comentario
+                                </label>
+                                <label for="otros">
+                                    <input type="checkbox" id="otros" name ="intereses" value="otros"> Otros
+                                </label>
+                            </div>   
+                        </div>
+                 
+                        <div class="col2">
+                            <label for="comentarios">Comentarios</label>
+                            <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
+                            <input type="submit" value="Enviar" class="button"/>
+                        </div>
+                       
+    
+                    </form>   
+                </div>
+              
+            </footer>
+
+
+
+</body>
+
+</html>
